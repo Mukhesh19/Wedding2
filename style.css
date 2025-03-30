@@ -1,44 +1,55 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0e6e1;
+    background-color: #FFF9DB; /* Light cream background */
 }
 
+/* Invitation background image */
 .invitation {
     position: relative;
+    background-image: url('Gold_and_Beige_Elegant_Indian_Wedding_Invitation.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 50px;
-}
-
-.invitation-image {
-    width: 100%;
-    height: auto;
 }
 
 .invitation-text {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #5d4d42;
-    font-size: 24px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    background-color: rgba(255, 147, 69, 0.8); /* Traditional Indian Orange */
+    padding: 30px;
+    border-radius: 10px;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 4rem;
     font-weight: bold;
+    color: #9C1B1F; /* Deep Red */
+    margin-bottom: 20px;
 }
 
+p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #50238A; /* Royal Purple */
+}
+
+/* Floating Menu Bar */
 .menu-bar {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #9C1B1F; /* Deep Red */
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
 .menu-item {
@@ -51,6 +62,7 @@ h1 {
     height: auto;
 }
 
+/* Popup styles */
 .popup {
     display: none;
     position: fixed;
@@ -63,23 +75,31 @@ h1 {
     width: 80%;
     max-width: 500px;
     z-index: 100;
+    border-radius: 10px;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #ffcc00;
+    background-color: #FF742E; /* Traditional Indian Orange */
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1rem;
 }
 
 form input, form textarea {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin-bottom: 10px;
+    border-radius: 5px;
     border: 1px solid #ccc;
 }
 
 form button {
-    background-color: #4CAF50;
+    width: 100%;
+    background-color: #FF742E;
     color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
