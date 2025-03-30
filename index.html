@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Wedding Invitation Image -->
+    <!-- Wedding Invitation Image as Background -->
     <div class="invitation">
-        <img src="Gold_and_Beige_Elegant_Indian_Wedding_Invitation.png" alt="Wedding Invitation" class="invitation-image">
         <div class="invitation-text">
             <h1>Dineswar & Raynusha</h1>
             <p>Together with their families, joyfully invite you to join them in celebrating the union of their hearts and lives in a beautiful wedding ceremony.</p>
@@ -18,21 +17,21 @@
 
     <!-- Floating Menu Bar -->
     <div class="menu-bar">
-        <div class="menu-item" id="music" onclick="toggleMusic()">
-            <img src="music-icon.png" alt="Music">
-        </div>
-        <div class="menu-item" id="calendar" onclick="addToCalendar()">
-            <img src="calendar-icon.png" alt="Calendar">
-        </div>
-        <div class="menu-item" id="location" onclick="showLocation()">
-            <img src="location-icon.png" alt="Location">
-        </div>
-        <div class="menu-item" id="contact" onclick="showContact()">
-            <img src="contact-icon.png" alt="Contact">
-        </div>
-        <div class="menu-item" id="rsvp" onclick="showRSVP()">
-            <img src="rsvp-icon.png" alt="RSVP">
-        </div>
+        <a href="#music" class="menu-item" onclick="openMusicControl()">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/2920/2920375.svg" alt="Music">
+        </a>
+        <a href="#calendar" class="menu-item" onclick="openCalendar()">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/2920/2920381.svg" alt="Calendar">
+        </a>
+        <a href="#location" class="menu-item" onclick="openLocation()">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/2920/2920382.svg" alt="Location">
+        </a>
+        <a href="#contact" class="menu-item" onclick="openContact()">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/2920/2920383.svg" alt="Contact">
+        </a>
+        <a href="#rsvp" class="menu-item" onclick="openRsvpForm()">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/2920/2920384.svg" alt="RSVP">
+        </a>
     </div>
 
     <!-- Music Control -->
