@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Wedding Invitation Image -->
+    <div class="invitation">
+        <img src="Gold_and_Beige_Elegant_Indian_Wedding_Invitation.png" alt="Wedding Invitation" class="invitation-image">
+        <div class="invitation-text">
+            <h1>Dineswar & Raynusha</h1>
+            <p>Together with their families, joyfully invite you to join them in celebrating the union of their hearts and lives in a beautiful wedding ceremony.</p>
+        </div>
+    </div>
+
+    <!-- Floating Menu Bar -->
+    <div class="menu-bar">
+        <div class="menu-item" id="music" onclick="toggleMusic()">
+            <img src="music-icon.png" alt="Music">
+        </div>
+        <div class="menu-item" id="calendar" onclick="addToCalendar()">
+            <img src="calendar-icon.png" alt="Calendar">
+        </div>
+        <div class="menu-item" id="location" onclick="showLocation()">
+            <img src="location-icon.png" alt="Location">
+        </div>
+        <div class="menu-item" id="contact" onclick="showContact()">
+            <img src="contact-icon.png" alt="Contact">
+        </div>
+        <div class="menu-item" id="rsvp" onclick="showRSVP()">
+            <img src="rsvp-icon.png" alt="RSVP">
+        </div>
+    </div>
+
+    <!-- Music Control -->
+    <div id="musicControl" class="popup">
+        <audio id="weddingSong" controls>
+            <source src="wedding-song.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <!-- Calendar Pop-Up -->
+    <div id="calendarPopup" class="popup">
+        <h3>Add to Calendar</h3>
+        <button onclick="addAppleCalendar()">Apple</button>
+        <button onclick="addGoogleCalendar()">Google</button>
+    </div>
+
+    <!-- Location Pop-Up -->
+    <div id="locationPopup" class="popup">
+        <p>Wedding & Reception Location: [Insert Address Here]</p>
+        <button onclick="openMaps()">Open in Google Maps</button>
+        <button onclick="openWaze()">Open in Waze</button>
+    </div>
+
+    <!-- Contact Pop-Up -->
+    <div id="contactPopup" class="popup">
+        <ul>
+            <li><a href="https://wa.me/[number1]" target="_blank">Name 1 (WhatsApp)</a></li>
+            <li><a href="tel:[number1]">Name 1 (Call)</a></li>
+            <li><a href="https://wa.me/[number2]" target="_blank">Name 2 (WhatsApp)</a></li>
+            <li><a href="tel:[number2]">Name 2 (Call)</a></li>
+        </ul>
+    </div>
+
+    <!-- RSVP Form -->
+    <div id="rsvpForm" class="popup">
+        <form id="rsvp" action="#">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone">
+            <label for="attendees">Number of Attendees:</label>
+            <input type="number" id="attendees" name="attendees">
+            <label for="remarks">Special Remarks:</label>
+            <textarea id="remarks" name="remarks"></textarea>
+            <label for="wish">Your Wish for the Couple:</label>
+            <textarea id="wish" name="wish"></textarea>
+            <button type="submit">Submit RSVP</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
